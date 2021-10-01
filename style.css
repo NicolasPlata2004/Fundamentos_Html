@@ -1,0 +1,66 @@
+/*# para id
+"." para clases*/
+
+#Filtro{
+    /*Width para ancho y px en pixeles*/
+    width: 400px;
+    /*Margin para margenes y auto para que se ajuste solo*/
+    margin: 0 auto;
+    /*display: grid y grid-template-columns para definir el orden en columnas y filas /fr significa fila ___ /*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item{
+    padding: 1rem;
+    background-color: rgb(188, 188, 189);
+    text-align: center;
+    /*Con border radius se modifica el div para que tenga bordes redondeados*/
+    border-radius: 10px;
+    /*En este caso se usa margin para dejar un espacio de un pixel entre los div hijos*/
+    margin-right: 1px;
+    /*Con "cursor" se puede cambiar el cursor en una seccion en especifico, en este caso en los div de la clase item*/
+    cursor: pointer;
+}
+
+/*Con .clase:hover se modifica el div una vez el cursor esta encima*/
+.item:hover{
+    color: greenyellow;
+    background-color: blue;
+    font-weight: bold;
+}
+
+#Cabecera{
+    background-color: red;
+    /*"vw" es ancho, con 100 todo el ancho de la pantaña*/
+    /*"vh" es alto, con 100 todo el alto de la pantaña*/
+    width: 100vw;
+    height: 35vh;
+    overflow: hidden;
+    padding-top: 55px;
+}
+
+/*Margin y padding se usan para definir las margenes, margin para la margen externa y padding para la margen interna, en este caso se 
+usa 0% para no dejar ningun espacio sobrante, para no dejar margen*/
+body{
+    margin:0%;
+}
+
+/*****************Estilo para la cabecera*******************/
+#ContTexto{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#ContImg{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#Titulo{
+    font-size: 5rem;
+    font-weight: bolder;
+}
