@@ -31,13 +31,12 @@
 }
 
 #Cabecera{
-    background-color: red;
+    background-color: rgb(47, 42, 42);
     /*"vw" es ancho, con 100 todo el ancho de la pantaña*/
     /*"vh" es alto, con 100 todo el alto de la pantaña*/
     width: 100vw;
-    height: 35vh;
+    height: 40vh;
     overflow: hidden;
-    padding-top: 55px;
 }
 
 /*Margin y padding se usan para definir las margenes, margin para la margen externa y padding para la margen interna, en este caso se 
@@ -52,12 +51,15 @@ body{
     height: 100%;
     float: left;
     text-align: center;
+    color: white;
+    margin-top: 70px;
 }
 
 #ContImg{
     width: 50%;
     height: 100%;
     float: right;
+    margin-top: 70px;
 }
 
 #Titulo{
@@ -66,10 +68,15 @@ body{
 }
 
 /*********Estilo de la cabecera***************/
-
+/*1) llamamos la clase flotar "imagen de la nave" y le asignamos un translacion en y para generar una pequeña animacion*/
+/*4) Para terminar la animacion la llamamos con la etiqueta "animation: nombre de el identificador" luego definios el tiempo y 
+finalmente usamos la eetiqueta ease-in-out infinite para que la animacion se repita indefinidamente hasta que cerremos la pagina*/
 .flotar{
-    animation: flotarArriba ;
+    animation: flotarArriba 4s ease-in-out infinite;
 }
+
+/*2) Con los key frames podemos generar animacions pequeñas basndonos en los frmaes y el tiempo de carga de la pagina*/
+/*3) En este caso generamos una translacion en y basandonos en los pixeles y la carga desde 0% (Inicio) hasta 100% (Pagina totalmente cargada)*/
 
 @keyframes flotarArriba {
     0%{
