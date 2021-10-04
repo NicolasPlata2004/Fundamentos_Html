@@ -92,3 +92,15 @@ finalmente usamos la eetiqueta ease-in-out infinite para que la animacion se rep
         transform: translateY(0px);
     }
 }
+
+
+
+/*********************************Estilo para personajes y cuerpo*********************************/
+/*El 100% del padre en este caso es la targeta de hermes ya que es una etiqueta independiente de Bootstrap*/
+
+.imagenHermes{
+    height: 200px;
+    width: 100px;
+    /*El object-fit sirve para ajustar la imagen*/
+    object-fit: contain;
+}
