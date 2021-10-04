@@ -1,5 +1,6 @@
 /*# para id
-"." para clases*/
+"." para clases
+Cuando no se pone nada para referenciar etiquetas*/
 
 /**/
 #Filtro{
@@ -103,4 +104,13 @@ finalmente usamos la eetiqueta ease-in-out infinite para que la animacion se rep
     width: 100px;
     /*El object-fit sirve para ajustar la imagen*/
     object-fit: contain;
+}
+
+#Cuerpo{
+    padding: 20px;
+}
+
+.negrilla{
+    font-weight: bold;
+    font-size: 1.2rem;
 }
